@@ -41,8 +41,8 @@ export const GameGrid = memo(function GameGrid({
           )}
         </div>
 
-        {/* Row targets */}
-        <div className="flex flex-col gap-1.5 sm:gap-2 w-10 sm:w-12">
+        {/* Row targets - using grid to match alignment */}
+        <div className="grid grid-rows-4 gap-1.5 sm:gap-2 w-10 sm:w-12">
           {rowTargets.map((target, idx) => (
             <TargetCell
               key={`row-${idx}`}
